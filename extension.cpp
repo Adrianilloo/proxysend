@@ -1667,7 +1667,7 @@ DETOUR_DECL_STATIC3(SV_ComputeClientPacks, void, int, clientCount, CGameClient *
 		g_Sample.is_parallel_pack_allowed()
 	};
 
-	sv_parallel_sendsnapshot->SetValue(true);
+	sv_parallel_sendsnapshot->SetValue(false);
 	sv_parallel_packentities->SetValue(parallel_pack);
 
 	in_compute_packs = true;
