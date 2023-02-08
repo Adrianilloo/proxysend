@@ -1524,7 +1524,7 @@ class CBaseServer : public IServer
 {
 public:
 	virtual float	GetCPUUsage( void ) = 0;
-	virtual void	BroadcastPrintf ( PRINTF_FORMAT_STRING const char *fmt, ...) = 0;
+	virtual void	BroadcastPrintf ( const char *fmt, ...) = 0;
 	virtual void	SetMaxClients( int number ) = 0;
 	virtual void	WriteDeltaEntities( CBaseClient *client, CClientFrame *to, CClientFrame *from,	bf_write &pBuf ) = 0;
 };
