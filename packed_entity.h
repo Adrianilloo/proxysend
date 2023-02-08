@@ -28,7 +28,7 @@
 
 #if defined( DEBUG_NETWORKING )
 #include "convar.h"
-void SpewToFile( PRINTF_FORMAT_STRING char const* pFmt, ... );
+void SpewToFile( char const* pFmt, ... );
 extern ConVar  sv_packettrace;
 #define TRACE_PACKET( text ) if ( sv_packettrace.GetInt() ) { SpewToFile text ; };
 #else
